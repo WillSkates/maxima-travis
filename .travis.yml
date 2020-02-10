@@ -13,7 +13,7 @@ before_script:
     - sha1sum -c maxima-gcl_5.42.2-1_amd64.deb.sha1sum
     - sudo dpkg -i maxima-common_5.42.2-1_all.deb
     - sudo dpkg -i maxima-gcl_5.42.2-1_amd64.deb
-    - maxima --version
+    - maxima --version -v
 
 script:
     - php hi.php
