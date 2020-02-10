@@ -3,18 +3,6 @@ language: php
 dist: bionic
 sudo: required
 
-addons:
-  apt:
-    update: true
-    packages:
-        - gcl
-        - build-essential
-        - checkinstall
-        - coreutils
-
-before_install:
-   - sudo dpkg-reconfigure gcl
-
 before_script:
     - curl -o maxima-common_5.42.2-1_all.deb https://iweb.dl.sourceforge.net/project/maxima/Maxima-Linux/5.42.2-Linux/maxima-common_5.42.2-1_all.deb
     - curl -o maxima-gcl_5.42.2-1_amd64.deb https://iweb.dl.sourceforge.net/project/maxima/Maxima-Linux/5.42.2-Linux/maxima-gcl_5.42.2-1_amd64.deb
