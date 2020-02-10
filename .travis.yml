@@ -25,7 +25,8 @@ before_script:
     - cd maxima-5.43.2
     - ./configure --prefix=/usr --exec-prefix=/usr
     - make
-    - sudo checkinstall
+    - make check
+    - sudo make install
 
 script:
     - php hi.php
