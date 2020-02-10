@@ -16,8 +16,8 @@ before_install:
    - sudo dpkg-reconfigure gcl
 
 before_script:
-    - curl -o maxima-common_5.42.2-1_all.deb https://versaweb.dl.sourceforge.net/project/maxima/Maxima-Linux/5.43.2-Linux/maxima-common_5.42.2-1_all.deb
-    - curl -o maxima-gcl_5.42.2-1_amd64.deb https://versaweb.dl.sourceforge.net/project/maxima/Maxima-Linux/5.43.2-Linux/maxima-gcl_5.42.2-1_amd64.deb
+    - curl -o maxima-common_5.42.2-1_all.deb https://iweb.dl.sourceforge.net/project/maxima/Maxima-Linux/5.42.2-Linux/maxima-common_5.42.2-1_all.deb
+    - curl -o maxima-gcl_5.42.2-1_amd64.deb https://iweb.dl.sourceforge.net/project/maxima/Maxima-Linux/5.42.2-Linux/maxima-gcl_5.42.2-1_amd64.deb
     - echo "0335b22e7157d93546b8e2c76c72b2a879413860  maxima-common_5.42.2-1_all.deb" > maxima-common_5.42.2-1_all.deb.sha1sum
     - echo "d13dd2a60b63b7f2d09484a7f557b937e34b54fe  maxima-gcl_5.42.2-1_amd64.deb" > maxima-gcl_5.42.2-1_amd64.deb.sha1sum
     - ls -la .
