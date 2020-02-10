@@ -17,7 +17,7 @@ before_install:
     - sudo dpkg-reconfigure gcl
 
 before_script:
-    - curl -v -o maxima-5.43.2.tar.gz https://downloads.sourceforge.net/project/maxima/Maxima-source/5.43.2-source/maxima-5.43.2.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmaxima%2Ffiles%2FMaxima-source%2F5.43.2-source%2Fmaxima-5.43.2.tar.gz%2Fdownload&ts=1581355217
+    - curl -v -o maxima-5.43.2.tar.gz -L https://downloads.sourceforge.net/project/maxima/Maxima-source/5.43.2-source/maxima-5.43.2.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmaxima%2Ffiles%2FMaxima-source%2F5.43.2-source%2Fmaxima-5.43.2.tar.gz%2Fdownload&ts=1581355217
     - ls -la .
     - echo "716b4a402abcddf56ca3ac816cd0c9ab17adf16e  maxima-5.43.2.tar.gz" > maxima-5.43.2.tar.gz.sha1sum
     - sha1sum -c maxima-5.43.2.tar.gz.sha1sum
